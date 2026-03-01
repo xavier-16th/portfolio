@@ -1,0 +1,62 @@
+# Xavier Carrier — Portfolio
+
+**Xavier Carrier**
+
+
+
+
+Mon portfolio perso avec des vinyles qui tombent en pluie — c'était censé être basé sur tes goûts Spotify mais j'ai un souci avec l'API Spotify pour l'instant, je corrigerai plus tard.
+
+## Installation et lancement en local
+
+Prérequis : **Node.js 18+** et **npm**
+
+```bash
+git clone <url-du-repo>
+cd portfolio-next
+npm install
+npm run dev
+```
+
+Le site tourne sur [http://localhost:3000]
+
+
+
+## Variables d'environnement
+
+Aucun fichier `.env` n'est nécessaire pour faire tourner le site en local.
+Le formulaire de contact fonctionne côté serveur sans configuration supplémentaire (les messages sont loggés en console).
+
+> Si l'intégration Spotify est activée à l'avenir, un `.env.local` sera requis avec les clés API Spotify.
+
+## Pages
+
+| Route | Description |
+|-------|-------------|
+| `/` | Accueil — hero, compétences, projets mis en avant |
+| `/projects` | Liste de tous les projets avec filtre par catégorie |
+| `/project/[slug]` | Pages de détail de chaque projet (générées statiquement) |
+| `/about` | Bio, parcours (timeline), compétences détaillées |
+| `/contact` | Formulaire de contact avec validation (`/api/contact`) |
+| `404` | Page d'erreur personnalisée |
+
+## Stack technique
+
+| Techno | Version | Rôle |
+|--------|---------|------|
+| Next.js | 16 | Framework (App Router, SSG, API routes) |
+| React | 19 | UI (Server + Client Components) |
+| TypeScript | 5 | Typage |
+| Tailwind CSS | 4 | Styles utilitaires |
+
+## Structure du projet
+
+```
+src/
+├── app/              # Pages & layouts (App Router)
+├── components/       # Composants réutilisables
+└── data/
+    └── portfolio.ts  # Données centralisées (projets, skills, timeline)
+```
+
+Tout le contenu du portfolio est dans `portfolio.ts` pour faciliter les mises à jour.
