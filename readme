@@ -3,7 +3,7 @@
 **Xavier Carrier**
 
 
-
+https://portfolio-vv1j.onrender.com/projects lien render 
 
 Mon portfolio perso avec des vinyles qui tombent en pluie — c'était censé être basé sur tes goûts Spotify mais j'ai un souci avec l'API Spotify pour l'instant, je corrigerai plus tard.
 
@@ -11,12 +11,13 @@ Mon portfolio perso avec des vinyles qui tombent en pluie — c'était censé ê
 
 Prérequis : **Node.js 18+** et **npm**
 
-```bash
-git clone <url-du-repo>
+
+les commande pour le terminal 
+git clone 
 cd portfolio-next
 npm install
 npm run dev
-```
+
 
 Le site tourne sur [http://localhost:3000]
 
@@ -51,12 +52,12 @@ Le formulaire de contact fonctionne côté serveur sans configuration supplémen
 
 ## Structure du projet
 
-```
+
 src/
 ├── app/              # Pages & layouts (App Router)
 ├── components/       # Composants réutilisables
 └── data/
     └── portfolio.ts  # Données centralisées (projets, skills, timeline)
-```
+
 
 Tout le contenu du portfolio est dans `portfolio.ts` pour faciliter les mises à jour.
