@@ -103,40 +103,40 @@ export const projects: Project[] = [
 
 export const skills: Skill[] = [
   {
-    icon: "💻",
-    name: "Web Development",
-    description: "building websites and web apps",
-    technologies: ["React", "Next.js", "TypeScript", "Node.js"],
+    icon: "�️",
+    name: "Languages",
+    description: "the languages i write code in",
+    technologies: ["JavaScript", "TypeScript", "HTML5", "CSS3", "PHP", "SQL", "c++","python" ],
+  },
+  {
+    icon: "⚙️",
+    name: "Frameworks & Libraries",
+    description: "what i build with",
+    technologies: ["React", "Next.js", "Node.js", "Three.js", "Tailwind CSS", "Sass"],
+  },
+  {
+    icon: "🛠️",
+    name: "Tools & IDEs",
+    description: "my everyday dev setup",
+    technologies: ["VS Code", "MAMP",  "GitHub", "Terminal", "wordpress"],
   },
   {
     icon: "🎨",
-    name: "UI/UX Design",
-    description: "making interfaces that look good and make sense",
-    technologies: ["Figma", "Adobe XD", "Prototyping", "Design Systems"],
+    name: "Design & 3D",
+    description: "for mockups, visuals and 3D work",
+    technologies: ["Figma", "Spline", "Adobe XD", "Photoshop"],
   },
   {
-    icon: "📱",
-    name: "Responsive Design",
-    description: "making layouts work on all screen sizes",
-    technologies: ["CSS Grid", "Flexbox", "Tailwind CSS", "Media Queries"],
-  },
-  {
-    icon: "⚡",
-    name: "Performance",
-    description: "keeping things fast and smooth",
-    technologies: ["Lighthouse", "Core Web Vitals", "Lazy Loading", "Caching"],
+    icon: "🗄️",
+    name: "Databases",
+    description: "storing and managing data",
+    technologies: ["MySQL", "JSON", ],
   },
   {
     icon: "🚀",
-    name: "Modern Frameworks",
-    description: "using the latest tools out there",
-    technologies: ["Next.js",  "Three.js", "Sass"],
-  },
-  {
-    icon: "✨",
-    name: "Animations",
-    description: "adding motion and life to interfaces",
-    technologies: ["CSS Animations", "Framer Motion", "GSAP", "Spline"],
+    name: "Deployment & Workflow",
+    description: "shipping and keeping things clean",
+    technologies: [ "Prettier", "Framer Motion", ],
   },
 ];
 

@@ -97,20 +97,21 @@ export default function HomePage() {
       >
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <AnimatedSection>
-            <h2 className="section-title">Skills &amp; Technologies</h2>
-            <p className="section-subtitle">What I bring to the table</p>
+            <h2 className="section-title">My Tech Stack</h2>
+            <p className="section-subtitle">Languages, tools & frameworks I work with</p>
           </AnimatedSection>
 
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))",
-              gap: "20px",
+              gridTemplateColumns: "repeat(2, 1fr)",
+              gap: "16px",
               marginTop: "30px",
             }}
+            className="skills-grid"
           >
             {skills.map((skill, index) => (
-              <AnimatedSection key={skill.name} delay={index * 100}>
+              <AnimatedSection key={skill.name} delay={index * 80}>
                 <SkillCard skill={skill} />
               </AnimatedSection>
             ))}
